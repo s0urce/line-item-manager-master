@@ -21,7 +21,7 @@ click.option = partial(click.option, show_default=True)
 logger = config.getLogger(__name__)
 
 @click.group(invoke_without_command=True)
-@click.option('--version', is_flag=True, help='Print version information and exit!!!')
+@click.option('--version', is_flag=True, help='Print version information and exit.')
 @click.pass_context
 def cli(ctx: click.core.Context, version: bool) -> None:
     if version:
