@@ -17,7 +17,7 @@ mgr:
   max_lica_records: 100
 
 googleads:
-  version: 'v202408'
+  version: 'v202502'
   line_items:
     micro_cent_factor: 1000000
     max_per_order: 450
@@ -40,7 +40,7 @@ prebid:
       - "hb_deal"
     single_order:
       code: "hb"
-      name: "Top Bid"
+      name: "All Bidders"
     targeting_key: "hb_pb"
   creative:
     size_override:

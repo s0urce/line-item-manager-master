@@ -40,6 +40,8 @@ properties:
         type: "object"
         additionalProperties: False
         properties:
+          copies:
+            $ref: "#/definitions/positiveIntegerType"
           sizes:
             $ref: "#/definitions/sizeArray"
           snippet:
@@ -131,6 +133,20 @@ properties:
     then:
       required:
         - "end_datetime"
+  geographies:
+    type: "object"
+    additionalProperties: False
+    properties:
+      include:
+        type: "array"
+        minItems: 0
+        items:
+          type: "string"
+      exclude:
+        type: "array"
+        minItems: 0
+        items:
+          type: "string"
   targeting:
     type: "object"
     additionalProperties: False
